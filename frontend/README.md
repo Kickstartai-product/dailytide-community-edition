@@ -26,7 +26,8 @@ We chose Yarn as our package manager.
 `cypress` - Cypress configurations. Currently not in use.<br />
 `public` - Contains fonts, incons and images publicly accessible.<br />
 
-Src folder
+### `src` folder<br />
+
 `app` - App router containing pages, Next-Auth logic and the api.<br />
 `components` - Components with stories viewable in storybook. Some basic components don't have a story.<br />
 `context` - Contains a theme context to switch between dark and light mode. Ideally we would have used css variables to toggle dark and light mode.<br />

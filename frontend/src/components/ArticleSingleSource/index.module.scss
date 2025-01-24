@@ -1,0 +1,33 @@
+@import '@/styles/colors.scss';
+@import '@/styles/media.scss';
+@import '@/styles/variables.scss';
+
+.singleArticleSourceContainer {
+  @include flex-Row(flex-start, center, inline-flex);
+  gap: $margin-s;
+  margin-bottom: $margin-xs;
+  width: 100%;
+
+  .sourceName {
+    @include flex-Row(center, center, inline-flex);
+    cursor: default;
+    padding: $padding-xxs $padding-s;
+    border-radius: $border-radius-s;
+    min-width: 90px;
+    font-weight: $font-weight-bold;
+  }
+
+  .sourceLink {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &.dark {
+      color: $lightWhiteText;
+    }
+
+    @include s-devices {
+      width: 80%;
+    }
+  }
+}

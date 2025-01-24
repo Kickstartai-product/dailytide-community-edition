@@ -1,0 +1,24 @@
+'use client'
+import React from 'react';
+import { StoryObj, Meta } from '@storybook/react';
+import {{pascalCase name}} from './index';
+
+const meta: Meta<typeof {{pascalCase name}}> = {
+  title: '{{pascalCase name}}',
+  argTypes: {
+    isDarkMode: { control: 'boolean' },
+  },
+};
+export default meta;
+
+type Story = StoryObj<typeof {{pascalCase name}}>;
+
+export const Component: Story = ({ darkMode }) => (
+  <div>
+      <{{pascalCase name}} />
+  </div>
+);
+
+Component.args = {
+  isDarkMode: false,
+};

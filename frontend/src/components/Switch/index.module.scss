@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/media.scss';
+
+.switch-lg {
+  input {
+    width: 2.5rem !important;
+    height: 20px;
+  }
+
+  label {
+    font-size: $font-size-xl;
+    margin-left: $margin-xxs;
+  }
+}
+
+.switch-sm {
+  input {
+    width: 2rem !important;
+    height: 15px;
+  }
+
+  label {
+    font-size: $font-size-s;
+  }
+}

@@ -1,0 +1,80 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+@mixin boxStyle {
+  @include bodyStyle;
+  background-color: $white;
+  padding: $padding-m $padding-l;
+  border: 1px solid $boxBorderGray;
+  border-radius: $border-radius-xs;
+
+  @include s-devices {
+    padding: $padding-s;
+  }
+}
+
+.editInput {
+  border: $borderDarkGray;
+  border-radius: $border-radius-s;
+  color: $darkGray;
+  font-size: $font-size-s;
+}
+
+.userDetailsContainer {
+  @include boxStyle;
+  @include flex-Row(flex-start, center);
+  position: relative;
+
+  @include s-devices {
+    @include flex-Col(center, center);
+  }
+
+  .editBtn {
+    position: absolute;
+    top: $margin-m;
+    right: $margin-m;
+    cursor: pointer;
+  }
+
+  .profilePic {
+    border-radius: 50%;
+  }
+
+  .userInfos {
+    @include flex-Col(flex-start, flex-start);
+    margin-left: $padding-m;
+    flex-grow: 1;
+
+    @include s-devices {
+      @include flex-Col(center, center);
+      margin-left: 0;
+      margin-top: $margin-m;
+    }
+
+    .name {
+      width: auto;
+      font-size: $font-size-xxl;
+      font-weight: $font-weight-bold;
+      color: $darkGray;
+      margin-bottom: $margin-xs;
+    }
+
+    .userName {
+      font-size: $font-size-s;
+      color: $lightGray;
+      margin-bottom: $margin-xs;
+    }
+
+    .email {
+      font-size: $font-size-s;
+      color: $darkGray;
+      margin-bottom: $margin-xs;
+    }
+
+    .resetLink {
+      font-size: $font-size-s;
+      color: $linkBlue;
+    }
+  }
+}

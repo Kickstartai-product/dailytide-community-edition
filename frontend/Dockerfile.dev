@@ -1,0 +1,21 @@
+FROM node:20-alpine as builder
+WORKDIR /app
+
+COPY package.json package.json
+
+RUN yarn
+
+COPY . .
+
+COPY .env.staging .env.production 
+ENV NODE_ENV development
+
+RUN yarn build
+
+RUN ["apk", "add", "--no-cache", "--upgrade", "bash"]
+RUN ["chmod", "+x", "./entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
+
+EXPOSE 3000
+
+CMD ["yarn", "start"]

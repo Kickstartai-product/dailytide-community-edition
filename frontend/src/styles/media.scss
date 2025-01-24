@@ -1,0 +1,23 @@
+@mixin xs-devices {
+  @media only screen and (max-width: #{$s-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin s-devices {
+  @media only screen and (max-width: #{$m-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin m-devices {
+  @media only screen and (min-width: #{$m-width}) and (max-width: #{$l-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin l-devices {
+  @media only screen and (min-width: #{$l-width}) {
+    @content;
+  }
+}

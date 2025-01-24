@@ -1,0 +1,18 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+.commentBarContainer {
+  @include flex-Row(flex-start, center);
+  gap: $margin-m;
+
+  .commentBarActionButton {
+    padding: $padding-xs $padding-s;
+    border-radius: $border-radius-l;
+    font-weight: $font-weight-bold;
+
+    @include s-devices {
+      padding: $padding-xs $padding-s;
+    }
+  }
+}

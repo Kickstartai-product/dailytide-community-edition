@@ -1,0 +1,43 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.articleSourcesContainer {
+  display: block;
+  width: 100%;
+
+  .title {
+    font-size: $font-size-l;
+    color: $darkGray;
+    margin-bottom: $margin-s;
+
+    &.dark {
+      color: $lightWhiteTitle;
+    }
+  }
+
+  .sourcesContainer {
+    @include flex-Col(flex-start, flex-start);
+    transition: height 0.2s ease-in-out;
+    overflow: hidden;
+  }
+
+  .isExpanded {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .showMoreButton {
+    background-color: transparent;
+    color: $darkGray;
+    margin: 0 auto;
+    padding: $padding-xs $padding-s;
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+    text-decoration-line: underline;
+    cursor: pointer;
+
+    &.dark {
+      color: $lightWhiteText;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+.main {
+  @include flex-Col();
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100vh;
+  z-index: 1;
+
+  &.dark {
+    background-color: $backgroundDark;
+  }
+
+  .topicContainer {
+    @include bodyStyle;
+    padding: 0;
+    padding-bottom: $padding-m;
+    max-width: $max-content-width;
+
+    @include m-devices {
+      width: 100%;
+      padding: 0;
+      padding: $padding-m;
+      padding-top: 0;
+    }
+
+    @include s-devices {
+      width: 100%;
+      padding: $padding-s;
+      padding-top: 0;
+    }
+  }
+
+  .topicSection {
+    height: auto;
+  }
+
+  .loadingCanvas {
+    height: 100vh;
+  }
+}

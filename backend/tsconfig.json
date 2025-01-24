@@ -1,0 +1,36 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "sourceMap": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2021",
+    "module": "commonjs",
+    "lib": ["es2021", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "paths": {
+      "@/root/*": ["./*"],
+      "@/Models/*": ["./src/Models/*"],
+      "@/Controllers/*": ["./src/Controllers/*"],
+      "@/Interfaces/*": ["./src/Interfaces/*"],
+      "@/Middlewares/*": ["./src/Middlewares/*"],
+      "@/api-v1/*": ["./src/api/v1/*"],
+      "@/Utils/*": ["./src/Utils/*"],
+      "@/Config/*": ["./src/Config/*"],
+      "@/Database/*": ["./src/Database/*"]
+    }
+  },
+  "include": ["/**/**/*.ts", "./custom.d.ts", "webpack.config.ts"],
+  "exclude": ["node_modules"]
+}

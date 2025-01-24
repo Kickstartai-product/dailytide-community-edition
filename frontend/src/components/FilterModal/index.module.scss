@@ -1,0 +1,35 @@
+@import '@/styles/variables.scss';
+@import '@/styles/colors.scss';
+@import '@/styles/media.scss';
+
+.body {
+  @include flex-Col(center, center);
+  background-color: $backgroundLight;
+  border-radius: $border-radius-xs;
+  padding: $padding-m 0;
+}
+
+.footer {
+  background-color: $backgroundLight;
+  border-top: unset;
+
+  .cancel {
+    background-color: transparent;
+    font-size: $font-size-xs;
+    padding: 0 $padding-s;
+    border-radius: $border-radius-xs;
+    color: $lightGray;
+    cursor: pointer;
+    font-weight: $font-weight-bold;
+  }
+
+  .save {
+    color: $lightGray;
+    font-size: $font-size-xs;
+    padding: 0 $padding-s;
+    border-radius: $border-radius-xs;
+    cursor: pointer;
+    font-weight: $font-weight-bold;
+    border: 1px solid $lightGray;
+  }
+}

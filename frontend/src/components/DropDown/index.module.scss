@@ -1,0 +1,17 @@
+@import '@/styles/variables.scss';
+@import '@/styles/colors.scss';
+
+.select {
+  z-index: 1;
+  padding: $padding-xs;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  margin: $margin-xs;
+  border-radius: $border-radius-s;
+  color: $gray;
+
+  &.focus {
+    outline: none;
+    border: unset;
+  }
+}

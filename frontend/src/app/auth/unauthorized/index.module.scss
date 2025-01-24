@@ -1,0 +1,34 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.unauthorizedContainer {
+  @include flex-Col();
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  min-height: 80vh;
+
+  &.dark {
+    background-color: $backgroundDark;
+  }
+
+  .heading {
+    font-size: $font-size-xxl;
+    font-weight: $font-weight-bold;
+
+    &.dark {
+      color: $lightWhiteTitle;
+    }
+  }
+
+  .backToSigninLink {
+    margin-top: $margin-m;
+    color: $darkGray;
+    cursor: pointer;
+    font-size: $font-size-l;
+
+    &.dark {
+      color: $lightWhiteTitle;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import '@/styles/variables.scss';
+@import '@/styles/colors.scss';
+@import '@/styles/media.scss';
+
+.dateContainer {
+  @include flex-Row(flex-start, center);
+  font-size: $font-size-m;
+
+  .tide,
+  .dateIndicator,
+  .articleNumber {
+    line-height: 0;
+  }
+
+  .tide {
+    margin: 0 $margin-xs;
+    color: $lightGray2;
+    padding-top: $padding-xxxs;
+
+    @include s-devices {
+      font-size: $font-size-s;
+    }
+  }
+
+  .dateIndicator {
+    font-size: $font-size-m;
+    color: $lightGray2;
+    margin-left: $margin-xs;
+
+    @include s-devices {
+      font-size: $font-size-s;
+    }
+
+    &:after {
+      margin: 0 $margin-xs;
+      content: '•';
+    }
+  }
+
+  .articleNumber {
+    font-size: $font-size-m;
+    color: $lightGray;
+
+    @include s-devices {
+      font-size: $font-size-s;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+@mixin boxStyle {
+  @include bodyStyle;
+  background-color: $white;
+  padding: $padding-m $padding-l;
+  border: 1px solid $boxBorderGray;
+  border-radius: $border-radius-xs;
+
+  @include s-devices {
+    padding: $padding-s;
+  }
+}
+
+.connectionContainer {
+  @include boxStyle;
+  position: relative;
+
+  .sectionTitle {
+    font-size: $font-size-xxl;
+    font-weight: $font-weight-bold;
+  }
+
+  .editBtn {
+    position: absolute;
+    top: $margin-m;
+    right: $margin-m;
+    cursor: pointer;
+  }
+}

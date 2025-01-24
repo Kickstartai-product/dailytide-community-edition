@@ -1,0 +1,15 @@
+@import '@/styles/variables.scss';
+@import '@/styles/colors.scss';
+
+.datePicker {
+  z-index: 10;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  border-radius: $border-radius-s;
+
+  & input {
+    border-radius: $border-radius-s;
+    padding: $padding-xs;
+    color: $gray;
+  }
+}

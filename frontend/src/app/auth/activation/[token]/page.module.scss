@@ -1,0 +1,16 @@
+@import '@/styles/variables.scss';
+
+.activationContainer {
+  @include flex-Col(center, center);
+  height: 60%;
+
+  .title {
+    justify-content: center;
+    margin-bottom: $margin-s;
+  }
+
+  .confetti {
+    margin: 0 auto;
+    width: 100%;
+  }
+}

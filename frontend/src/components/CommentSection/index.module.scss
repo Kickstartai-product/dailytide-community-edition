@@ -1,0 +1,10 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+.commentSectionContainer {
+  @include bodyStyle;
+  @include flex-Col(flex-start, flex-start);
+  gap: $padding-s;
+  padding: $padding-s 0;
+}

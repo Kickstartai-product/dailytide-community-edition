@@ -1,0 +1,50 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.topicsListContainer {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: $padding-l;
+
+  .topicsList {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .loadingCanvas {
+    height: 100vh;
+
+    .loadingSpinner {
+      margin: 0 auto;
+      top: 40%;
+    }
+  }
+
+  .showMoreContainer {
+    @include flex-Row(center, center, inline-flex);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $backgroundLightLinearGradient;
+
+    &.dark {
+      background: $backgroundDark;
+    }
+
+    .showMoreButton {
+      padding: $button-padding;
+      gap: $margin-xs;
+      border-radius: $border-radius-l;
+      font-size: $font-size-l;
+      background: $kickstartAIGradient;
+      box-shadow: $button-box-shadow;
+
+      &.dark {
+        color: $lightWhiteText;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.topicSectionContainer {
+  background-color: $black;
+  position: sticky;
+  // top: $navbar-height;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: $kickstartAIGradient;
+  }
+
+  .sectionContents {
+    @include flex-Row(space-between, center);
+    padding: $padding-m;
+    margin: 0 auto;
+    max-width: 862px;
+  }
+
+  .information {
+    @include flex-Row(center, center);
+    gap: $padding-s;
+  }
+
+  .tideTitle {
+    color: $lightGray2;
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+    width: auto;
+  }
+
+  .divider {
+    width: 5px;
+    height: 5px;
+    background-color: $lightGray;
+    border-radius: $border-radius-m;
+  }
+
+  .articleAmount {
+    font-size: $font-size-l;
+    color: $lightGray;
+    margin: 0;
+  }
+
+  .filters {
+    @include flex-Row(center, center);
+    gap: $padding-s;
+  }
+
+  .dateDropdown,
+  .filterButton {
+    background-color: transparent !important;
+  }
+
+  .dateDropdown {
+    color: $lightGray2;
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+  }
+
+  .filterButton {
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -1,0 +1,35 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+.inputContainer {
+  width: 100%;
+  margin: auto;
+  height: auto;
+
+  .inputTitle {
+    display: block;
+    font-size: $font-size-s;
+    margin: $margin-xs 0;
+    color: $lightGray;
+  }
+
+  .input {
+    padding: $padding-xs;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include s-devices {
+      width: 100%;
+    }
+  }
+
+  .error {
+    color: $red;
+    font-size: $font-size-s;
+    font-weight: $font-weight-light;
+  }
+}

@@ -1,0 +1,89 @@
+@import '@/styles/variables.scss';
+@import '@/styles/colors.scss';
+@import '@/styles/media.scss';
+
+.badge {
+  font-size: $font-size-xxxs;
+  font-weight: $font-weight-bold;
+  display: inline-block;
+  color: $gray;
+  background-color: $sliderTitleColor;
+  margin: $margin-xxxs;
+  border-radius: $border-radius-s;
+  padding: 0 $padding-xs;
+  animation: 0.5s ease-in-out 0s 1 slideInFromLeft;
+  transition: all 0.2s ease-in-out;
+  min-width: 40px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $lightGray;
+    color: $white;
+  }
+
+  @include s-devices {
+    font-size: $font-size-xxxs;
+    margin: $margin-xxxs;
+    padding: 0 $padding-xs;
+  }
+
+  @include xs-devices {
+    font-size: $font-size-xxxs;
+    margin: $margin-xxxs;
+    padding: 0 $padding-xs;
+  }
+}
+
+.overlay {
+  padding: $padding-s $padding-m;
+  background-color: $lightBoxBackground;
+  border-radius: $border-radius-s;
+  border: unset;
+  color: $gray;
+  opacity: 0.9;
+  width: auto;
+
+  @include s-devices {
+    padding: $padding-s;
+    min-width: auto;
+  }
+}
+
+.popover {
+  border: unset;
+  max-width: 400px !important;
+
+  @include s-devices {
+    max-width: 300px !important;
+  }
+
+  @include xs-devices {
+    max-width: 250px !important;
+  }
+}
+
+.body {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+
+  & .title {
+    margin-bottom: $margin-s;
+  }
+
+  & a {
+    color: $primaryOrange;
+    font-size: $font-size-xxs;
+    margin-top: $margin-m;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.header {
+  font-size: $font-size-m;
+  font-weight: $font-weight-bold;
+  margin-bottom: $margin-s;
+}

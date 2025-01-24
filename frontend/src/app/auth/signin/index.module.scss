@@ -1,0 +1,117 @@
+@import '@/styles/variables.scss';
+@import '@/styles/colors.scss';
+@import '@/styles/media.scss';
+
+//TODO: Ignore this file, this is going to be completely changed in another ticket
+.loginContainer {
+  @include flex-Row(center, flex-start);
+  width: 100%;
+  background-color: $white;
+  padding-top: $padding-l;
+
+  @include s-devices {
+    height: auto;
+  }
+
+  .headingContainer {
+    align-self: flex-start;
+
+    .getStartedTitle {
+      font-size: $font-size-xxl-title;
+    }
+
+    .textComplement {
+      font-size: $font-size-l;
+      font-weight: $font-weight-bold;
+      color: $darkGray2;
+      margin: $margin-s auto;
+    }
+  }
+
+  .signInCard {
+    @include flex-Col(flex-start, center);
+    width: 100%;
+    min-width: auto;
+    border: none;
+    padding: $padding-m;
+    border-radius: $border-radius-m;
+    background-color: $white;
+    gap: $margin-s;
+    margin-bottom: $margin-l;
+
+    @include l-devices {
+      width: 25%;
+      min-width: 460px;
+      padding: $padding-l;
+      border: $borderGray;
+    }
+  }
+
+  .separator {
+    @include flex-Row(center, center);
+    width: 100%;
+    margin: $margin-s 0;
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+
+    &::before,
+    &::after {
+      content: '';
+      width: 50%;
+      height: 1px;
+      background-color: $lightGray4;
+    }
+
+    &::before {
+      margin-right: $margin-s;
+    }
+
+    &::after {
+      margin-left: $margin-s;
+    }
+  }
+
+  .termsDisclaimer,
+  .link {
+    color: $black2;
+  }
+
+  .formContainer {
+    width: 100%;
+    .input,
+    .inputLowercase {
+      height: 48px;
+      border-radius: $border-radius-xs;
+      border: $borderGray2;
+      background: $white;
+    }
+
+    .inputLowercase {
+      text-transform: lowercase;
+    }
+  }
+
+  .signInButton {
+    color: $white;
+    background: $kickstartAIGradient;
+    width: 100%;
+    height: 50px;
+    margin-top: $margin-m;
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+  }
+
+  .errorMessage {
+    padding: $padding-xs;
+    border: $borderRed;
+    border-radius: $border-radius-l;
+    background: $lightRed;
+    text-align: center;
+    margin-top: $margin-m;
+    color: $red;
+  }
+
+  .spinner {
+    margin: $margin-s auto 0;
+  }
+}

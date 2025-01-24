@@ -1,0 +1,40 @@
+name: Display Results only
+
+on:
+  workflow_dispatch:
+
+jobs:
+  topic_modeling:
+    environment: dev
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: pip
+      - name: Checkout code
+        uses: nschloe/action-cached-lfs-checkout@v1
+        with:
+          include: "*.bin"
+      - name: Install dependencies and project
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
+          poetry install --no-dev --no-interaction --no-ansi
+      - name: Run topic modeling
+        env:
+          MONGODB_USERNAME: ${{ vars.MONGODB_USERNAME }}
+          MONGODB_PASSWORD: ${{ vars.MONGODB_PASSWORD_DEV }}
+          MONGODB_HOST: ${{ vars.MONGODB_HOST_DEV }}
+          TOPIC_MODE: ${{ vars.TOPIC_MODE }}
+          OPENAI_API_KEY: ${{ vars.OPENAI_API_KEY }}
+        run: poetry run python scripts/generate_topics.py
+      - name: Post-process topic modeling results
+        env:
+          TOPIC_MODE: ${{ vars.TOPIC_MODE }}
+          OPENAI_API_KEY: ${{ vars.OPENAI_API_KEY }}
+        run: poetry run python scripts/post_processing.py
+      - name: Display results
+        run: poetry run python scripts/display_results.py

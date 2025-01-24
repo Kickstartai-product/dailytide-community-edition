@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "next",
+    "plugin:storybook/recommended"
+  ],
+  "rules": {
+    "no-console": "error",
+    "no-empty-function": "warn"
+  }
+}

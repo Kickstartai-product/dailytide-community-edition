@@ -1,0 +1,82 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+.contentContainer {
+  @include bodyStyle;
+
+  .headerSection {
+    @include flex-Row(flex-start, center);
+    flex-wrap: nowrap;
+    padding: $padding-m 0;
+
+    .category {
+      font-size: $font-size-l;
+      font-weight: $font-weight-bold;
+      color: $darkGray;
+
+      &.dark {
+        color: $lightGray;
+      }
+
+      &.tech {
+        color: $techCategory;
+      }
+
+      &.business {
+        color: $businessCategory;
+      }
+
+      &.governance {
+        color: $governanceCategory;
+      }
+
+      &.netherlands {
+        color: $netherlandsCategory;
+      }
+
+      &.tools {
+        color: $toolsCategory;
+      }
+    }
+
+    .voteIndicator {
+      &.dark {
+        &:after {
+          color: $lightGray;
+        }
+      }
+    }
+  }
+
+  .bodySection {
+    .title {
+      color: $black2;
+      font-size: $font-size-l-title;
+      padding-bottom: $padding-s;
+
+      @include s-devices {
+        font-size: $font-size-xml;
+      }
+
+      &.dark {
+        color: $lightWhiteTitle;
+      }
+    }
+
+    .description {
+      font-size: $font-size-l;
+      color: $darkGray;
+      padding: $padding-s 0;
+      line-height: 2rem;
+
+      @include s-devices {
+        font-size: $font-size-m;
+      }
+
+      &.dark {
+        color: $lightWhiteText;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+.commentSectionContainer {
+  @include bodyStyle;
+  @include flex-Col(flex-start, flex-start);
+  gap: $padding-s;
+  width: 100%;
+
+  .commentInput {
+    border: 1px solid $lightGray;
+    border-radius: $border-radius-s;
+    transition: border 0.2s ease-in-out;
+    padding: $padding-xs $padding-s;
+    max-height: $max-Input-height;
+    min-height: $min-Input-height;
+    position: relative;
+    z-index: 1;
+  }
+
+  .commentActionBar {
+    @include flex-Row(flex-end, center);
+    width: 100%;
+    .submitButton {
+      padding: $padding-xxs $padding-s;
+      font-weight: $font-weight-bold;
+
+      &.dark {
+        background-color: unset;
+        border: 1px solid $lightWhiteText;
+        color: $lightWhiteText;
+      }
+    }
+  }
+}

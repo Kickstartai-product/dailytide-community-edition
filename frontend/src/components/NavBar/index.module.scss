@@ -1,0 +1,332 @@
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+@import '@/styles/colors.scss';
+
+.navigationContainer {
+  @include flex-Row(center, center);
+  background-color: $backgroundBlack;
+  padding: 0 0 $padding-xxs;
+  box-shadow: $shadow-xs;
+  top: 0;
+  position: sticky;
+  width: 100%;
+  z-index: 10;
+  height: $header-height;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $header-gradiant-seperator;
+    background: $kickstartAIGradient;
+  }
+
+  .innerContainer {
+    @include flex-Row(flex-start, center);
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: $margin-s;
+
+    @include m-devices {
+      width: 95%;
+    }
+
+    @include s-devices {
+      width: 95%;
+      margin: 0 auto;
+      gap: $margin-xs;
+    }
+  }
+
+  .profileContainer {
+    @include flex-Row(center, center);
+    gap: $margin-xs;
+    position: relative;
+
+    .profileDetailPopupContainer {
+      visibility: hidden;
+
+      @include s-devices {
+        display: none;
+      }
+    }
+
+    .isPopupVisible {
+      visibility: visible;
+    }
+
+    .profileIcon {
+      @include s-devices {
+        display: none;
+      }
+    }
+
+    .mobileMenuTitle {
+      font-size: $font-size-l;
+      font-weight: $font-weight-normal;
+
+      @include l-devices {
+        display: none;
+      }
+
+      &.dark {
+        color: $white;
+      }
+    }
+
+    .mobileMenuItem {
+      display: block;
+
+      @include l-devices {
+        display: none;
+      }
+
+      &.dark {
+        color: $white;
+      }
+    }
+  }
+
+  .mobileMenuButton {
+    cursor: pointer;
+    margin: $padding-m $margin-xxs;
+
+    @include l-devices {
+      display: none;
+    }
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+
+    @include l-devices {
+      @include flex-Row(space-around, center);
+    }
+  }
+
+  .unauthenticated {
+    @include flex-Row(center, center);
+    color: $white;
+    gap: $margin-xs;
+
+    @include l-devices {
+      margin-left: $margin-s;
+    }
+  }
+
+  .menuContents {
+    width: 90%;
+    margin-left: $margin-m;
+
+    @include l-devices {
+      @include flex-Row(flex-start, center);
+    }
+
+    .dropdownMenu {
+      margin: 0 $margin-m;
+    }
+
+    .pageLink {
+      text-decoration: none;
+      margin: 0 $margin-m;
+      color: $white;
+      font-size: $font-size-l;
+      font-weight: $font-weight-normal;
+    }
+
+    .dropdownMenu {
+      color: $white;
+      font-size: $font-size-l;
+
+      .dropdownItem {
+        color: $darkGray;
+        font-size: $font-size-m;
+        padding: $padding-xs $padding-m;
+        width: auto;
+      }
+    }
+  }
+
+  .userSettings {
+    @include flex-Row(flex-start, center, flex, row-reverse);
+    gap: $margin-s;
+
+    .options {
+      .searchIcon,
+      .themeIcon {
+        margin-right: $margin-s;
+        cursor: pointer;
+      }
+    }
+
+    .login,
+    .register,
+    .separator {
+      color: $lightWhiteTitle;
+      cursor: pointer;
+    }
+
+    @include l-devices {
+      .options {
+        @include flex-Row(flex-start, center);
+      }
+    }
+  }
+
+  .mobileMenu {
+    @include flex-Row(flex-start, flex-start);
+    transform: translateX(-100vw);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-color: $white;
+
+    @include l-devices {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: $header-gradiant-seperator;
+      background: $kickstartAIGradient;
+    }
+
+    &.dark {
+      background: $backgroundSolidDarkMode;
+    }
+
+    .themeIcon {
+      position: absolute;
+      bottom: 10%;
+    }
+
+    .closeMenuButton {
+      @include flex-Row(flex-start, center);
+      margin: 0 auto;
+      gap: $margin-xs;
+      height: $header-height;
+    }
+
+    .mobileMenuContents {
+      padding: $margin-s $margin-xxs;
+      width: 85%;
+    }
+
+    .menuContents {
+      @include flex-Col(flex-start, flex-start);
+      gap: $margin-s;
+      margin: $margin-m 0;
+    }
+
+    .dropdownMenu {
+      @include flex-Col(flex-start, flex-start);
+      color: $black !important;
+      gap: $margin-xs;
+      margin: 0;
+
+      &.dark {
+        color: $white !important;
+      }
+
+      // the only way I can select a bootstrap dropdown child div
+      div {
+        @include flex-Col(flex-start, flex-start);
+        position: relative !important;
+        transform: unset !important;
+        padding: 0 !important;
+        border: none !important;
+        gap: $margin-xs;
+        background-color: transparent !important;
+      }
+
+      .dropdownItem {
+        color: $darkGray2;
+        transition: opacity 0.3s;
+        padding: 0;
+        font-weight: $font-weight-normal;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .pageLink {
+      color: $black !important;
+      font-size: $font-size-l;
+      font-weight: $font-weight-normal;
+      margin: 0;
+
+      &.dark {
+        color: $white !important;
+      }
+    }
+
+    .userSettings,
+    .options {
+      @include flex-Col(space-between, flex-start);
+    }
+
+    .profileContainer {
+      @include flex-Col(flex-start, flex-start);
+    }
+
+    .unauthenticated {
+      .login,
+      .register,
+      .separator {
+        color: $black;
+      }
+
+      &.dark {
+        .login,
+        .register,
+        .separator {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .hidden {
+    animation: slide-out 0.5s ease-in-out;
+    transform: translateX(-100vw);
+  }
+
+  .show {
+    animation: slide-in 0.5s ease-in-out;
+    transform: translateX(0);
+  }
+}
+
+.noScroll {
+  overflow: hidden;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}

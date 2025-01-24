@@ -1,0 +1,30 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+.modalBodyContainer {
+  @include flex-Col(flex-start, center);
+  width: 100%;
+
+  .shareOptionsContainer {
+    @include flex-Row(center, center);
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    gap: $margin-s;
+
+    .shareOption {
+      @include flex-Row(flex-start, center);
+      margin-right: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .inputLink {
+    border: 1px solid $lightGray;
+    border-radius: $border-radius-s;
+    color: $darkGray;
+    font-size: $font-size-s;
+  }
+}

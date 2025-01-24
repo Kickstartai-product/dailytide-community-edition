@@ -1,0 +1,37 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.topicContainer,
+.topicContent {
+  @include flex-Col(flex-start, flex-start);
+  gap: $margin-s;
+  text-decoration: none;
+}
+
+.topicContainer {
+  padding: $padding-m 0;
+  border-bottom: $borderGray;
+
+  .topicContent {
+    text-decoration: none;
+  }
+
+  .topicTitle {
+    color: $darkGray;
+    margin: 0;
+    font-size: $font-size-xxxl;
+
+    &.dark {
+      color: $lightGray2;
+    }
+  }
+
+  .summary {
+    color: $darkGray;
+    margin: 0;
+
+    &.dark {
+      color: $lightGray2;
+    }
+  }
+}

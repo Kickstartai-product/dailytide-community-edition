@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/media.scss';
+
+.button {
+  background-color: $darkGray;
+  color: $lightWhiteText;
+  padding: $padding-xxs $padding-s;
+  border: none;
+  border-radius: $border-radius-xs;
+  font-size: $font-size-s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .icon {
+    width: auto;
+    height: 1.2rem;
+    margin-right: $margin-xs;
+  }
+
+  &.outline {
+    background-color: unset;
+    color: $darkGray;
+    border: 1px solid $darkGray;
+
+    &.dark {
+      color: $lightWhiteText;
+      border: 1px solid $lightWhiteText;
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+}

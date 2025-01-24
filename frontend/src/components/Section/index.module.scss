@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+@import '../../styles/colors.scss';
+@import '../../styles/media.scss';
+
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: $padding-m $padding-l;
+
+  @include s-devices {
+    padding: $padding-s;
+  }
+}

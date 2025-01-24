@@ -1,0 +1,27 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.main {
+  @include flex-Col(flex-start, center);
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  min-height: 80vh;
+  position: relative;
+
+  .leftBubble {
+    position: fixed;
+    left: 0;
+    top: 20px;
+  }
+
+  .rightBubble {
+    position: fixed;
+    right: 0;
+    top: 600px;
+  }
+
+  &.dark {
+    background-color: $backgroundDark;
+  }
+}

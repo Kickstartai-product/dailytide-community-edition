@@ -1,0 +1,45 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+@mixin boxStyle {
+  @include bodyStyle;
+  background-color: $white;
+  padding: $padding-m $padding-l;
+  border: 1px solid $boxBorderGray;
+  border-radius: $border-radius-xs;
+
+  @include s-devices {
+    padding: $padding-s;
+  }
+}
+
+.summaryContainer {
+  @include boxStyle;
+  position: relative;
+  @include flex-Col(center, flex-start);
+  gap: $padding-s;
+
+  .sectionTitle {
+    font-size: $font-size-xxl;
+    font-weight: $font-weight-bold;
+  }
+
+  .editBtn {
+    position: absolute;
+    top: $margin-m;
+    right: $margin-m;
+    cursor: pointer;
+  }
+
+  .summary {
+    font-size: $font-size-l;
+  }
+}
+
+.editInput {
+  border: $borderDarkGray;
+  border-radius: $border-radius-s;
+  color: $darkGray;
+  font-size: $font-size-s;
+}

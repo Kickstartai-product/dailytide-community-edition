@@ -1,0 +1,13 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.mainContainer {
+  @include flex-Col(center, center);
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  min-height: 80vh;
+  position: relative;
+  background-color: $lightGrayBackground;
+  gap: $padding-s;
+}

@@ -1,0 +1,61 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+.replyContainer {
+  @include flex-Col(flex-start, flex-start);
+  border-left: 1px solid;
+  padding-left: $padding-m;
+  gap: $padding-s;
+  border-left: 1px solid rgb(red($lightGray), green($lightGray), blue($lightGray), 0.25);
+
+  .replyNav {
+    @include flex-Row(flex-start, center);
+
+    .replyUser {
+      font-size: $font-size-m;
+      font-weight: $font-weight-bold;
+      color: $darkGray;
+
+      &.dark {
+        color: $lightWhiteText;
+      }
+    }
+
+    .replyTime {
+      font-size: $font-size-s;
+      color: $lightGray;
+
+      &.dark {
+        color: $lightWhiteText;
+      }
+    }
+  }
+
+  .replyBody {
+    font-size: $font-size-s;
+
+    &.dark {
+      color: $lightWhiteText;
+    }
+  }
+
+  .replyActionBar {
+    @include flex-Row(flex-start, center);
+    gap: $padding-s;
+
+    .replyAction {
+      font-size: $font-size-s;
+      color: $darkGray;
+      cursor: pointer;
+
+      &.dark {
+        color: $lightWhiteText;
+      }
+
+      &.active {
+        color: $darkGray;
+      }
+    }
+  }
+}

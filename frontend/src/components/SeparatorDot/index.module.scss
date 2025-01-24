@@ -1,0 +1,15 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.dot {
+  background-color: $darkGray;
+  width: $seprator-dot-size;
+  height: $seprator-dot-size;
+  box-sizing: border-box;
+  border-radius: $border-radius-s;
+  margin: $margin-s;
+
+  &.dark {
+    background-color: $lightWhiteText;
+  }
+}

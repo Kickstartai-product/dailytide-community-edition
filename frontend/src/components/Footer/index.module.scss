@@ -1,0 +1,74 @@
+@import '@/styles/variables.scss';
+@import '@/styles/colors.scss';
+@import '@/styles/media.scss';
+
+.footer {
+  @include flex-Col(center, center);
+  background-color: $black2;
+  padding: $padding-ml;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background: $kickstartAIGradient;
+  }
+
+  .menu,
+  .branding {
+    max-width: 1214px;
+    margin: 0 auto;
+  }
+
+  .menu {
+    @include flex-Row(flex-start, flex-start);
+    flex-wrap: wrap;
+    padding-bottom: $padding-ml;
+    gap: $padding-l;
+
+    @include l-devices {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+  }
+
+  .menuSection {
+    @include flex-Col(center, flex-start);
+    min-width: 200px;
+    gap: $margin-s;
+
+    .sectionTitle,
+    .sectionLink,
+    .sectionText {
+      margin: 0;
+      font-size: $font-size-l;
+      font-weight: $font-weight-normal;
+    }
+
+    .sectionTitle {
+      color: $white;
+    }
+
+    .sectionLink {
+      display: block;
+      color: $lightGray2;
+      font-family: var(--font-kickstartai), sans-serif;
+    }
+
+    .sectionText {
+      color: $lightGray2;
+      line-height: $line-height-l;
+      font-family: var(--font-kickstartai), sans-serif;
+    }
+  }
+
+  .branding {
+    padding-top: $padding-ml;
+    width: 100%;
+    border-top: $borderDarkGray;
+  }
+}

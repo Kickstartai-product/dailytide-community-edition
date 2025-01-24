@@ -1,0 +1,95 @@
+// Light Mode
+$primaryLightColor: #3115cb;
+$primaryLightColor1: #55abd9;
+
+// Dark Mode
+
+// Common  TODO: These coloes are not well defined
+$white: #fff;
+$black: #000;
+$black2: #0c0c0c;
+$backgroundBlack: #121212;
+$darkBlue: #00005c;
+$darkGray: #222222;
+$lightGray: #9a9a9a;
+$lightGray2: #e1e1e1;
+$lightGray3: #f5f5f5;
+$lightGray4: #bfbfbf;
+$lightGray5: #f9f9f9;
+$darkGray2: #595959;
+$red: #ff0505;
+$lightRed: #fff0f0;
+$lightRed2: #f59797;
+$linkBlue: #1d0ddd;
+
+$pastelGreen1: #ebffeb;
+$green1: #008000;
+
+$lightWhiteTitle: #e1e0e1;
+$lightWhiteText: #d9d8e2;
+
+//category colors
+$techCategory: #27ae60;
+$businessCategory: #3498db;
+$governanceCategory: #6a5acd;
+$netherlandsCategory: #e67e22;
+$toolsCategory: #e74c3c;
+
+// Background
+$backgroundLight: #f5f5f5;
+$backgroundDark: #040436;
+$lightGrayBackground: #f7f7f7;
+
+$boxBorderGray: #c7c7c7;
+
+// text
+$textLineHeight: 25px;
+$textColor: $darkGray;
+
+$borderGray: 1px solid rgba(154, 154, 154, 0.25);
+$borderGray2: 1px solid rgba(0, 0, 0, 0.25);
+
+$borderRed: 1px solid $lightRed2;
+
+// gradients
+$backgroundLightRadialBubble: radial-gradient(50% 50% at 50% 50%, #807670 0%, #464341 100%);
+$backgroundDarkRadialBubble: radial-gradient(50% 50% at 50% 50%, $linkBlue 0%, #695ef4 100%);
+
+$backgroundLightLinearGradient: linear-gradient(179deg, rgba(254, 254, 254, 0) 10%, #ffffff 50.49%);
+$backgroundDarkLinearGradient: linear-gradient(179deg, rgba(254, 254, 254, 0) 10%, $darkBlue 100%);
+
+$backgroundSolidDarkMode: linear-gradient(180deg, #000000 0%, #010028 70%);
+
+$kickstartAIGradient: linear-gradient(96deg, $linkBlue 2.61%, #f76108 97.07%);
+
+// Gradiant
+@mixin gradient($deg, $color1, $color2) {
+  background: $color1;
+  background: linear-gradient($deg, $color2 40%, $color1 75%);
+}
+
+// Legacy Colors
+// colors
+$primaryOrange: #857c76;
+$primaryBlue: #00f;
+$secondaryBlue: #3115cb;
+$background: #fcfcfc;
+$backgroundDarklegacy: #f4f4f4;
+$darkBackground: #0f0f0f;
+$lightGray: #868686;
+$mediumGray: #666666;
+$gray: #292929;
+$textBoxBackground: #f4ebeb;
+$darkTextBoxBackground: #4c4c4c;
+$lightBoxBackground: #f9efef;
+$darkBoxBackground: #999;
+$sliderTitleColor: #bebebe;
+$cardDarkTransparent: #262626a4;
+$cardLightTransparent: #f4f4f4a4;
+
+//twitter colors
+$twitterBlue: #1da1f2;
+$twitterGray: #8899a6;
+$twitter-bg-hover: #cfd9de;
+$twitter-border: #e5e7eb;
+$twitter-body: #f5f8fa;

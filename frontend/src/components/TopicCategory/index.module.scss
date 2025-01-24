@@ -1,0 +1,43 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.topicCategoryContainer {
+  @include flex-Row(flex-start, center, flex);
+
+  .categoryTitle {
+    font-size: $font-size-m;
+    font-weight: $font-weight-bold;
+    color: $darkGray2;
+    margin: $margin-xxxs 0 0 $margin-xs;
+
+    &.dark {
+      color: $lightGray;
+    }
+  }
+
+  .dot {
+    width: 9px;
+    height: 8px;
+    border-radius: $border-radius-s;
+
+    &.tech {
+      background-color: $techCategory;
+    }
+
+    &.business {
+      background-color: $businessCategory;
+    }
+
+    &.governance {
+      background-color: $governanceCategory;
+    }
+
+    &.netherlands {
+      background-color: $netherlandsCategory;
+    }
+
+    &.tools {
+      background-color: $toolsCategory;
+    }
+  }
+}

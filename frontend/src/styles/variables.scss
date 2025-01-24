@@ -1,0 +1,156 @@
+//Breakpoints
+$s-width: 480px;
+$m-width: 768px;
+$l-width: 1024px;
+$xl-width: 1280px;
+$xxl-width: 1536px;
+$xxxl-width: 1920px;
+
+// paddings
+$padding-xxxs: 0.125rem;
+$padding-xxs: 0.25rem;
+$padding-xs: 0.5rem;
+$padding-s: 1rem;
+$padding-m: 2rem;
+$padding-ml: 3rem;
+$padding-l: 4rem;
+$padding-lx: 6rem;
+$padding-xl: 8rem;
+
+// margins
+$margin-xxxs: 0.125rem;
+$margin-xxs: 0.25rem;
+$margin-xs: 0.5rem;
+$margin-s: 1rem;
+$margin-m: 2rem;
+$margin-l: 4rem;
+$margin-xl: 8rem;
+$margin-xxl: 12rem;
+
+// font sizes
+$font-size-xxxs: 11px;
+$font-size-xxs: 12px;
+$font-size-xs: 13px;
+$font-size-s: 14px;
+$font-size-m: 16px;
+$font-size-l: 18px;
+$font-size-xl: 20px;
+$font-size-xml: 22px;
+$font-size-xxl: 24px;
+$font-size-xxxl: 26px;
+$font-size-xxxxl: 28px;
+$font-size-l-title: 32px;
+$font-size-xl-title: 40px;
+$font-size-xxl-title: 44px;
+
+// font weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// line heights
+$line-height-xs: 8px;
+$line-height-s: 16px;
+$line-height-m: 24px;
+$line-height-l: 32px;
+
+// border radius
+$border-radius-xxs: 0.125rem;
+$border-radius-xs: 0.25rem;
+$border-radius-s: 0.5rem;
+$border-radius-m: 1rem;
+$border-radius-l: 2rem;
+$border-radius-xl: 4rem;
+
+$header-height: 90px;
+$header-gradiant-seperator: 5px;
+$nav-bar-height: 60px;
+
+// shadows light
+$shadow-xs: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
+$shadow-s: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+$shadow-m: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+$shadow-l: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+
+// shadows dark
+$shadow-xs-d: 0 0.125rem 0.3rem '#ff6400';
+$shadow-s-d: 0 0.5rem 1rem '#ff6400';
+$shadow-m-d: 0 1rem 2rem '#ff6400';
+$shadow-l-d: 0 2rem 4rem '#ff6400';
+
+// slider
+$slider-height: 700px;
+
+// Gradient degree
+$deg0: 0deg;
+$deg45: 45deg;
+$deg90: 90deg;
+$deg135: 135deg;
+$deg180: 180deg;
+$deg225: 225deg;
+$deg270: 270deg;
+$deg315: 315deg;
+
+//Footer
+$footer-height: 120px;
+
+$max-content-width: 992px;
+$max-Input-height: 400px;
+$min-Input-height: 50px;
+
+$borderDarkGray: 1px solid rgba(154, 154, 154, 0.25);
+
+//Button
+$button-padding: $padding-xs $padding-m;
+$button-box-shadow: 0px 0px 10px 0px #feefe6;
+
+// Separator Dot
+$seprator-dot-size: 6px;
+
+// Gradiant
+@mixin darkBackgroundGradient {
+  background-color: hsla(0, 0%, 7%, 1);
+  background-image: radial-gradient(at 0% 0%, hsla(244, 88%, 45%, 1) 0px, transparent 50%),
+    radial-gradient(at 7% 12%, hsla(228, 90%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(244, 88%, 45%, 1) 0px, transparent 50%),
+    radial-gradient(at 94% 91%, hsla(242, 100%, 70%, 1) 0px, transparent 50%);
+}
+
+// Animation
+@mixin animation() {
+  transition: all 0.5s ease-in-out;
+}
+
+// Flex
+@mixin flex-Col($justify-content: center, $align-items: center, $flex: flex, $flex-direction: column) {
+  display: $flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin flex-Row($justify-content: center, $align-items: center, $flex: flex, $flex-direction: row) {
+  display: $flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+//body style
+@mixin bodyStyle {
+  width: 50%;
+  max-width: $max-content-width;
+
+  @include m-devices {
+    width: 90%;
+  }
+
+  @include s-devices {
+    width: 95%;
+  }
+}

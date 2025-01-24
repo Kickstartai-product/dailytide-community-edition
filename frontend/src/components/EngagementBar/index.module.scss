@@ -1,0 +1,28 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.engagementIndicatoresContainer {
+  @include flex-Row(flex-start, center, inline-flex);
+  margin-right: $margin-s;
+  gap: $margin-xs;
+
+  .text {
+    color: $darkGray2;
+  }
+
+  .iconButton {
+    color: $darkGray2;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    background-color: unset;
+    padding: unset;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .thumbsDownIcon {
+    transform: scaleX(-1);
+  }
+}

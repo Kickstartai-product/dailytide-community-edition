@@ -1,0 +1,31 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.commentsIndicatorContainer {
+  @include flex-Row(flex-start, center, inline-flex);
+  padding: 0 $padding-s;
+
+  .text {
+    color: $darkGray2;
+
+    &.dark {
+      color: $lightWhiteText;
+    }
+  }
+
+  .iconButton {
+    color: $darkGray2;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    background-color: unset !important;
+    padding: unset;
+
+    &.dark {
+      color: $lightWhiteText;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

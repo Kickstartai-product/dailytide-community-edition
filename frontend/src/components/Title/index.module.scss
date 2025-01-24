@@ -1,0 +1,36 @@
+@import '@/styles/colors.scss';
+@import '@/styles/media.scss';
+@import '@/styles/variables.scss';
+
+.heading {
+  @include flex-Row(flex-start, center, inline-flex);
+  font-size: $font-size-xml;
+  font-weight: $font-weight-bold;
+  width: 100%;
+  margin-bottom: 0;
+
+  @include l-devices {
+    font-size: $font-size-l-title;
+  }
+}
+
+.section {
+  background-color: $secondaryBlue;
+  color: $white;
+  justify-content: center;
+  font-size: $font-size-m;
+  padding: $padding-s;
+  font-weight: $font-weight-bold;
+  border-radius: $border-radius-xs;
+  text-transform: uppercase;
+
+  @include l-devices {
+    font-size: $font-size-l-title;
+  }
+}
+
+/** emphasis options **/
+.uppercase {
+  text-transform: uppercase;
+  font-weight: $font-weight-normal;
+}

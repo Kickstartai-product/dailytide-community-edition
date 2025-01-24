@@ -1,0 +1,33 @@
+@import '@/styles/colors.scss';
+
+.body {
+  height: 100vh;
+
+  &.dark {
+    background-color: $backgroundBlack;
+    &::before,
+    &::after {
+      background: $backgroundDarkRadialBubble;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    width: 20%;
+    height: 20%;
+    position: fixed;
+    filter: blur(300px);
+    background: $backgroundLightLinearGradient;
+  }
+
+  &::before {
+    top: -100px;
+    left: -100px;
+  }
+
+  &::after {
+    bottom: -100px;
+    right: -100px;
+  }
+}

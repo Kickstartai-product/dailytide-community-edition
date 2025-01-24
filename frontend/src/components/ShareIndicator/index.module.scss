@@ -1,0 +1,30 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+
+.shareIndicatorContainer {
+  @include flex-Row(flex-start, center);
+  gap: $margin-xs;
+  padding: 0 $padding-s;
+  cursor: pointer;
+
+  .shareIndicatorText {
+    color: $darkGray2;
+    font-size: $font-size-m;
+
+    &.dark {
+      color: $lightWhiteText;
+    }
+  }
+
+  .shareIcon {
+    color: $darkGray2;
+
+    &.dark {
+      color: $lightWhiteText;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

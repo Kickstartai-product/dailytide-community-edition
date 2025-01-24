@@ -1,0 +1,34 @@
+@import '@/styles/variables.scss';
+@import '@/styles/colors.scss';
+@import '@/styles/media.scss';
+
+.topicDateHeaderContainer {
+  @include flex-Row(flex-start, center);
+  width: 100%;
+  padding: 0;
+  color: $white;
+  position: sticky;
+  top: $header-height;
+  background-color: $black;
+  padding: 0 $padding-s;
+  z-index: 1;
+  height: $nav-bar-height;
+
+  .topidDateHeaderContentContainer {
+    @include flex-Row(space-between, flex-start);
+    padding: $padding-s 0;
+
+    @include m-devices {
+      padding: $padding-s 0;
+    }
+
+    @include s-devices {
+      padding: $padding-s 0;
+    }
+
+    .dateInFilterBar {
+      cursor: pointer;
+      z-index: 6;
+    }
+  }
+}

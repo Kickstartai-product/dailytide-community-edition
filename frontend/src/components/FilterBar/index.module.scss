@@ -1,0 +1,47 @@
+@import '@/styles/variables.scss';
+@import '@/styles/colors.scss';
+@import '@/styles/media.scss';
+
+.filterBarContainer {
+  @include flex-Row(center, center);
+  width: 100%;
+  // it's added to fill width of the parent container
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  padding: 0;
+  color: $white;
+  position: absolute;
+  top: $header-height;
+  background-color: $black;
+  height: $nav-bar-height;
+
+  .filterContentContainer {
+    @include bodyStyle;
+    @include flex-Row(flex-end, center);
+    padding: $padding-s 0;
+    z-index: 2;
+
+    @include m-devices {
+      padding: $padding-s 0;
+    }
+
+    @include s-devices {
+      padding: $padding-s 0;
+    }
+
+    .datePicker {
+      font-size: $font-size-m;
+      margin: 0 $margin-s;
+
+      @include s-devices {
+        font-size: $font-size-s;
+      }
+    }
+
+    .dateInFilterBar {
+      cursor: pointer;
+      padding: $padding-s 0;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import '@/styles/colors.scss';
+@import '@/styles/variables.scss';
+@import '@/styles/media.scss';
+
+.commentContainer {
+  @include flex-Col(flex-start, flex-start);
+  gap: $padding-s;
+  width: 100%;
+
+  .commentNav {
+    @include flex-Row(flex-start, center);
+
+    .commentUser {
+      font-size: $font-size-l;
+      font-weight: $font-weight-bold;
+      color: $darkGray;
+
+      &.dark {
+        color: $lightWhiteText;
+      }
+    }
+
+    .commentTime {
+      font-size: $font-size-m;
+      color: $lightGray;
+
+      &.dark {
+        color: $lightWhiteText;
+      }
+    }
+  }
+
+  .commentBody {
+    font-size: $font-size-s;
+
+    &.dark {
+      color: $lightWhiteText;
+    }
+  }
+
+  .commentActionBar {
+    @include flex-Row(flex-start, center);
+
+    .commentAction {
+      font-size: $font-size-s;
+      color: $darkGray;
+      cursor: pointer;
+
+      &.dark {
+        color: $lightWhiteText;
+      }
+
+      &.active {
+        color: $darkGray;
+      }
+    }
+  }
+
+  .loadMore {
+    font-size: $font-size-s;
+    color: $lightGray;
+    cursor: pointer;
+
+    &.dark {
+      color: $lightWhiteText;
+    }
+  }
+}

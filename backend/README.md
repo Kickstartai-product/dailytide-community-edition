@@ -12,9 +12,9 @@ For local development create an environment variable .env.development and use .e
 
 ## Important Commands
 
-`prod` - Run the api server in production mode after building
-`dev` - Run the api server in dev mode
-`build` - Builds the app so you can deploy a bundle
+`prod` - Run the api server in production mode after building.<br />
+`dev` - Run the api server in dev mode.<br />
+`build` - Builds the app so you can deploy a bundle.<br />
 
 ## Building a docker image
 
@@ -22,13 +22,13 @@ We have created a Dockerfile.development that builds and creates a docker image 
 
 ## Patterns
 
-If you access `src/api/v1/` you will see a folder structure that replicates the API paths structure.
-Some routes are documented with Swagger
+If you access `src/api/v1/` you will see a folder structure that replicates the API paths structure.<br />
+Some routes are documented with Swagger.
 
 ## Important files to check
 
-Static data like messages or values are stored in constants.ts
-You can change this accordingly to your needs.
+Static data like messages or values are stored in constants.ts<br />
+You can change this accordingly to your needs.<br />
 Configurations are stored in `src/Configs`.
 
 ## Controlers

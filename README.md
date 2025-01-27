@@ -15,7 +15,7 @@ This repository contains the work of many people at Kickstart AI Engineering tea
 
 ### Backend
 
-<img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/expressjs.png?raw=true" width="100" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/nodejs.svg?raw=true" width="100" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/jwt.svg?raw=true" width="100" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/swagger.png?raw=true" width="100" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/typescript.png?raw=true" width="100" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/webpack.png?raw=true" width="100" />
+<img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/expressjs.png?raw=true" height="100" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/nodejs.svg?raw=true" height="100" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/jwt.svg?raw=true" height="100" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/swagger.png?raw=true" height="100" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/typescript.png?raw=true" height="100" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/webpack.png?raw=true" height="100" />
 
 ### Frontend
 

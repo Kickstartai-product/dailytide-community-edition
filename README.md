@@ -15,7 +15,7 @@ This repository contains the work of many people at Kickstart AI Engineering tea
 
 ### Backend
 
-![expressJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/expressjs.png?raw=true) ![nodeJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/nodejs.svg?raw=true) ![JWT](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/jwt.svg?raw=true) ![swagger](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/swagger.png?raw=true) ![expressJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/typescript.png?raw=true) ![expressJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/webpack.png?raw=true)
+![expressJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/expressjs.png?raw=true | width=100) ![nodeJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/nodejs.svg?raw=true | width=100) ![JWT](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/jwt.svg?raw=true | width=100) ![swagger](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/swagger.png?raw=true | width=100) ![expressJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/typescript.png?raw=true | width=100) ![expressJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/webpack.png?raw=true | width=100)
 
 ### Frontend
 

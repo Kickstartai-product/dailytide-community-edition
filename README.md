@@ -19,6 +19,8 @@ This repository contains the work of many people at Kickstart AI Engineering tea
 
 ### Frontend
 
+<img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/storybook.png?raw=true" height="45" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/sass.png?raw=true" height="45" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/redux-toolkit.png?raw=true" height="45" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/react-query.png?raw=true" height="45" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/plopjs.png?raw=true" height="45" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/nextjs.png?raw=true" height="45" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/next-auth.png?raw=true" height="45" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/font-awesome.png?raw=true" height="45" /><img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/eslint.png?raw=true" height="45" />
+
 ### AI Pipeline
 
 ## Project UI

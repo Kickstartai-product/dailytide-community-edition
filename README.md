@@ -6,10 +6,9 @@
 
 Catchup with the trending discussions on your most used platforms, effortlessly delivered to you daily, all thanks to AI.<br>
 
-This is a proof-of-concept of an AI news website. The repo contains 3 parts of the project: backend, frontend, and AI data summarization pipeline.<br>
-Each of the folders contain a readme.md that tells you how to use it and where things are. <br>
+This is a proof-of-concept of an AI news website. The repo contains 3 parts of the project: backend, frontend, and AI data summarization pipeline. Each of the folders contain a readme.md that tells you how to use it and where things are. <br>
 
-This repository contains the work of many people at Kickstart AI Engineering team.<br>
+This repository contains the work of many people at Kickstart AI Engineering team. We hope you find the joy that we had building this prototype!<br>
 
 ## Stack
 

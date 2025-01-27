@@ -1,6 +1,6 @@
 # Daily Tide Community Edition
 
-![News feed](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/logo-kai.svg?raw=true) ![News feed](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/logo.png?raw=true)
+![Kickstart AI](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/logo-kai.svg?raw=true) ![Daily Tide](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/logo.png?raw=true)
 
 ## Daily Insights into trending topics, Simplified.
 
@@ -10,6 +10,16 @@ This is a proof-of-concept of an AI news website. The repo contains 3 parts of t
 Each of the folders contain a readme.md that tells you how to use it and where things are. <br>
 
 This repository contains the work of many people at Kickstart AI Engineering team.<br>
+
+## Stack
+
+### Backend
+
+![expressJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/expressjs.png?raw=true) ![nodeJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/nodejs.svg?raw=true) ![JWT](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/jwt.svg?raw=true) ![swagger](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/swagger.png?raw=true) ![expressJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/typescript.png?raw=true) ![expressJS](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/webpack.png?raw=true)
+
+### Frontend
+
+### AI Pipeline
 
 ## Project UI
 

@@ -80,4 +80,4 @@ Important configuration files can be found at the root of the project, including
 
 ---
 
-This README is designed to provide a comprehensive overview of the Daily Tide frontend. If you have any questions or need assistance, feel free to reach out. Happy coding! 🌟
+Feel free to dive into the repository, explore the codebase, and adapt it to your needs. If you have any questions or feedback, don't hesitate to reach out. Happy coding! 😊

@@ -26,7 +26,7 @@ This repository represents the collaborative effort of many talented individuals
 
 ## 🖼️ Project UI Screenshots
 
-<br><br>
+<br>
 
 ### 📰 News Feed
 

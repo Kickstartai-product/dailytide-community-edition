@@ -9,6 +9,34 @@ Each of the folders contain a readme.md that tells you how to use it and where t
 
 This repository contains the work of many people at Kickstart AI Engineering team.<br>
 
+## Project UI
+
+### News feed
+
+![News feed](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/news-feed.jpg?raw=true)
+
+### Dark mode
+
+![Dark mode](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/dark-mode.jpg?raw=true)
+
+### Comment section
+
+![Comment section](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/comment-section.jpg?raw=true)
+
+### Login
+
+![Login](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/login.jpg?raw=true)
+
+### Date picker
+
+![Date picker](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/date-picker.jpg?raw=true)
+
+### Profile
+
+![Profile](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/profile.jpg?raw=true)
+
+# License
+
 dailytide-community-edition
 Copyright (C) 2025 Kickstart AI
 
@@ -24,17 +52,3 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
-
-## Project UI
-
-![News feed](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/news-feed.jpg?raw=true)
-
-![Dark mode](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/dark-mode.jpg?raw=true)
-
-![Comment section](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/comment-section.jpg?raw=true)
-
-![Login](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/login.jpg?raw=true)
-
-![Date picker](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/date-picker.jpg?raw=true)
-
-![Profile](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/profile.jpg?raw=true)

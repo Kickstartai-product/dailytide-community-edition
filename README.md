@@ -1,5 +1,7 @@
 # Daily Tide Community Edition
 
+![News feed](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/logo-kai.svg?raw=true) ![News feed](https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/logo.png?raw=true)
+
 ## Daily Insights into trending topics, Simplified.
 
 Catchup with the trending discussions on your most used platforms, effortlessly delivered to you daily, all thanks to AI.<br>

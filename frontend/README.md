@@ -1,64 +1,83 @@
-# Daily Tide - CE
+# 🌊 Daily Tide - Community Edition (CE) - Frontend
 
-This is a proof-of-concept for the Daily Tide frontend.
+<img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/logo.png?raw=true" height="75" /> <img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/logo-kai.svg?raw=true" height="45" /><br><br>
 
-## Package manager
+## Package Manager 📦
 
-We chose Yarn as our package manager.
+We have chosen **Yarn** as our package manager for this project. Yarn ensures fast, reliable, and secure dependency management, making development and collaboration smooth and efficient.
 
-## Running the project
+## Running the Project 🚀
 
-`dev` - Run app in dev mode<br />
-`build` - Build the app<br />
-`analyze` - Analyze bundle. You can use variants of this command to analyze:server and analyze:browser.<br />
-`start` - Start command for nextJS.<br />
-`lint` - Lint code. You can use the :fix variant to fix lint issues.<br />
-`cypress` - Run cypress. Currently not in use.<br />
-`test` - Test the code via Jest. Currently not in use.<br />
-`generate` - Create pages or components in one click.<br />
-`storybook` - Run storybook to see Component documentation.<br />
+This project comes with several commands to manage and run the application:
 
-## Project structure
+- **`dev`** - Runs the app in development mode. Ideal for live debugging and feature testing. 🔄
+- **`build`** - Builds the app for production. Generates an optimized bundle for deployment. 📦
+- **`analyze`** - Analyzes the app's bundle size. Variants like `analyze:server` and `analyze:browser` are available to target specific environments. 📊
+- **`start`** - Starts the production build using Next.js. 🏁
+- **`lint`** - Lints the codebase to ensure coding standards. Use the `:fix` variant to automatically resolve issues. 🔧
+- **`cypress`** - Runs Cypress for end-to-end testing (currently not in use). 🧪
+- **`test`** - Runs tests via Jest (currently not in use). 🧷
+- **`generate`** - Quickly creates pages or components with minimal effort. ⚡
+- **`storybook`** - Launches Storybook for visualizing and documenting components. 📚
 
-`.storybook` - Storybook configurations.<br />
-`.vscode` - IDE settings.<br />
-`build-tools` - Plop generator configurations<br />
-`cypress` - Cypress configurations. Currently not in use.<br />
-`public` - Contains fonts, incons and images publicly accessible.<br />
+## Project Structure 🗂️
 
-### `src` folder<br />
+This project is organized into multiple folders for better modularity and scalability. Here's an overview:
 
-`app` - App router containing pages, Next-Auth logic and the api.<br />
-`components` - Components with stories viewable in storybook. Some basic components don't have a story.<br />
-`context` - Contains a theme context to switch between dark and light mode. Ideally we would have used css variables to toggle dark and light mode.<br />
-`data` - Contains data for error messages, etc.<br />
-`endpoints` - Contains all api endpoints.<br />
-`hooks` - Custom hooks.<br />
-`interfaces` - Contains TS types.<br />
-`marketing` - Google Analytics abstraction<br />
-`providers` - Contains providers for authentication, store and queries.<br />
-`redux` - Contains actions and reducers for our store.<br />
-`styles` - Contains general css markup.<br />
-`utils` - Utility functions for Auth and Topics.<br />
+### Root-Level Directories:
 
-## Font licensing
+- **`.storybook`** - Contains configurations for Storybook, allowing for seamless component documentation and visualization.
+- **`.vscode`** - IDE settings to standardize the development environment. 🖥️
+- **`build-tools`** - Configuration files for the Plop generator to streamline component or page creation. 🛠️
+- **`cypress`** - Houses configurations for Cypress tests (not currently in use).
+- **`public`** - Contains static assets like fonts, icons, and images that are publicly accessible. 🌐
 
-Some fonts were under a license that does not allow us to share through our repository.<br />
-These are the affected fonts: `ABCDiatypeSemi-Mono-Bold`, `ABCDiatypeSemi-Mono-Regular`<br />
-Feel free to replace these fonts with free to use or any of your liking.
+### `src` Folder Structure:
 
-## Fomatting and linting
+- **`app`** - The core of the app router, including pages, Next-Auth logic, and API integrations. 🚪
+- **`components`** - Reusable components for the frontend. Some components include stories viewable in Storybook, while simpler ones might not. 🧩
+- **`context`** - Includes a theme context for switching between dark and light modes. Ideally, CSS variables would be used for this functionality. 🌗
+- **`data`** - Stores data such as error messages and other static information. 📋
+- **`endpoints`** - A centralized directory for API endpoint definitions. 🔗
+- **`hooks`** - Custom React hooks to encapsulate reusable logic. 🪝
+- **`interfaces`** - Contains TypeScript types and interfaces for strong type checking. ✅
+- **`marketing`** - A simple abstraction for Google Analytics, enabling easy integration of tracking events. 📈
+- **`providers`** - Houses providers for authentication, state management, and API queries. 🛡️
+- **`redux`** - Contains actions and reducers for the Redux store, providing state management for the app. 🔄
+- **`styles`** - General CSS files for global styling and theming. 🎨
+- **`utils`** - Utility functions, including those for authentication and topic handling. ⚙️
 
-Prettier and ESLint.
+## Font Licensing 🖋️
 
-## Containers
+Certain fonts used in the project are not licensed for redistribution through this repository. These fonts are:
 
-We have created a dockerfile that you can use to contain the app in a docker image container.
+- `ABCDiatypeSemi-Mono-Bold`
+- `ABCDiatypeSemi-Mono-Regular`
 
-## Environment variables
+Feel free to replace these fonts with freely available alternatives or any fonts of your choice that align with the project’s style.
 
-There is a .env.example that you can use as a base to run this project. You will need to add your own credentials and api keys to make the project fully functional.
+## Formatting and Linting 📏
 
-## Configurations
+To maintain a clean and consistent codebase, the project uses **Prettier** and **ESLint**. These tools ensure adherence to coding standards and a uniform style across the codebase.
 
-You can find some important configurations files at the root of the project, such as: `constants.t`s, `middleware.ts`, `plopfile.js`, `cypress.config.ts`, `jest.config.mjs`, etc.
+## Containers 🐳
+
+A **Dockerfile** is included in the project to containerize the app. This makes it simple to build and deploy the application in a Docker container for consistent environments.
+
+## Environment Variables 🔑
+
+The project requires specific environment variables to run. An example file, `.env.example`, is provided as a template. You will need to add your own credentials and API keys to make the application fully functional.
+
+## Configurations ⚙️
+
+Important configuration files can be found at the root of the project, including:
+
+- **`constants.ts`** - Stores static constants used throughout the app.
+- **`middleware.ts`** - Middleware configurations for Next.js.
+- **`plopfile.js`** - Plop generator configuration for creating new components or pages.
+- **`cypress.config.ts`** - Cypress test configuration (if enabled).
+- **`jest.config.mjs`** - Jest testing configuration (if enabled).
+
+---
+
+This README is designed to provide a comprehensive overview of the Daily Tide frontend. If you have any questions or need assistance, feel free to reach out. Happy coding! 🌟

@@ -2,7 +2,7 @@
 
 <img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/logo.png?raw=true" height="75" /> <img src="https://github.com/Kickstartai-product/dailytide-community-edition/blob/main/repo-assets/logo-kai.svg?raw=true" height="45" /><br><br>
 
-Welcome to the **Daily Tide Backend - Community Edition**! 🌊 This repository houses the proof-of-concept API for the Daily Tide project, designed to provide streamlined and efficient backend services for delivering daily insights into trending topics.
+Welcome to the **Daily Tide Backend - Community Edition**! 🌊 This repository houses the **proof-of-concept** API for the Daily Tide project, designed to provide streamlined and efficient backend services for delivering daily insights into trending topics.
 
 ## Entrypoint 🏁
 

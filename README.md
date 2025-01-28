@@ -14,7 +14,7 @@ This repository represents the collaborative effort of many talented individuals
 
 Big shout-outs to the team who made this possible:
 
-<a href="https://www.linkedin.com/in/gmarques-dev/" target="_blank">Gonçalo Marques</a> - Fullstack Developer</br>
+<a href="https://www.linkedin.com/in/gmarques-dev/" target="_blank">Gonçalo Marques</a> - Senior Fullstack Developer</br>
 <a href="https://www.linkedin.com/in/shahryar-aboutorabi/" target="_blank">Shahryar Aboutorabi</a> - Lead Fullstack Developer</br>
 <a href="https://www.linkedin.com/in/caschavanwanrooij/" target="_blank">Cascha van Wanrooij</a> - AI specialist</br>
 <a href="#" target="_blank">Omendra Manhar</a> - AI specialist</br>

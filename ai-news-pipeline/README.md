@@ -87,7 +87,7 @@ Currently the job is fetching articles from the following sources:
 
 1. **Local Web-App Environment**:
 
-   - If you wish to run a local web-app environment for The Daily Tide, please refer to the README guides in the backend ([GitHub](https://github.com/Kickstartai-product/ai-insights-REST-nodejs)) and frontend ([GitHub](https://github.com/Kickstartai-product/AI_Insights)) repositories. Note that the Python repository is not used in this setup.
+   - If you wish to run a local web-app environment for The Daily Tide, please refer to the README guides in the backend and frontend repositories. Note that the Python repository is not used in this setup.
 
 2. **MongoDB Database**:
 

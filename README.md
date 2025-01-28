@@ -17,7 +17,7 @@ Big shout-outs to the team who made this possible:
 <a href="https://www.linkedin.com/in/gmarques-dev/">Gonçalo Marques</a> - Senior Fullstack Developer</br>
 <a href="https://www.linkedin.com/in/shahryar-aboutorabi/">Shahryar Aboutorabi</a> - Lead Fullstack Developer</br>
 <a href="https://www.linkedin.com/in/caschavanwanrooij/">Cascha van Wanrooij</a> - AI Specialist</br>
-<a href="#">Omendra Manhar</a> - AI Specialist</br>
+<a href="#">Omendra Manhar</a> - AI Specialist</br></br>
 
 This work is the result of 328 Pull Requests and 1276 commits.
 

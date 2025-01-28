@@ -10,6 +10,15 @@ This is a proof-of-concept of an AI-powered news website. The repo contains thre
 
 This repository represents the collaborative effort of many talented individuals from the Kickstart AI Engineering team. We hope you enjoy the experience as much as we enjoyed building this prototype! 🎉<br><br>
 
+## Team
+
+Big shout-outs to the team who made this possible:
+
+<a href="https://www.linkedin.com/in/shahryar-aboutorabi/" target="_blank">Shahryar Aboutorabi - Fullstack Developer</a>
+<a href="https://www.linkedin.com/in/gmarques-dev/" target="_blank">Gonçalo Marques - Fullstack Developer</a>
+<a href="#" target="_blank">Omendra Manhar - AI specialist</a>
+<a href="https://www.linkedin.com/in/caschavanwanrooij/" target="_blank">Cascha van Wanrooij - AI specialist</a>
+
 ## 🛠️ Stack
 
 ### ⚙️ Backend

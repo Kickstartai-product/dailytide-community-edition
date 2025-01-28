@@ -22,7 +22,7 @@ This project includes several commands to manage and operate the backend:
 
 ## Building a Docker Image 🐳
 
-For containerized deployments, we provide a `Dockerfile.development`. This Dockerfile creates an image with the API backend, including the `.env.development` environment variables. Docker ensures consistency across environments, making it easy to replicate the backend setup locally or in production. 📋
+For containerized deployments, we provide a `Dockerfile.development`. This Dockerfile creates an image with the API backend, including the `.env.development` environment variables. Docker ensures consistency across environments, making it easy to replicate the backend setup locally or in staging. 📋
 
 ## Patterns 🗂️
 
@@ -54,11 +54,11 @@ Authentication-related logic is located in the **`src/Middlewares`** directory. 
 
 ## Utility Functions 🧰
 
-Reusable utility functions are stored in **`src/Untils/index.ts`**. These include operations such as:
+Reusable utility functions are stored in **`src/Utils/index.ts`**. These include operations such as:
 
 - Formatting dates 📅
 - Standardizing news sources 📰
-- Hashing sensitive data like emails 🔒
+- Hashing sensitive data like emails (optional if you are a cybersecurity freak) 🔒
 
 These utilities help maintain clean and DRY (Don't Repeat Yourself) code. ✨
 

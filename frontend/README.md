@@ -28,7 +28,7 @@ This project is organized into multiple folders for better modularity and scalab
 
 - **`.storybook`** - Contains configurations for Storybook, allowing for seamless component documentation and visualization.
 - **`.vscode`** - IDE settings to standardize the development environment. 🖥️
-- **`build-tools`** - Configuration files for the Plop generator to streamline component or page creation. 🛠️
+- **`build-tools`** - Configuration files for the Plop generator to streamline component or page creation (it makes your life easy). 🛠️
 - **`cypress`** - Houses configurations for Cypress tests (not currently in use).
 - **`public`** - Contains static assets like fonts, icons, and images that are publicly accessible. 🌐
 
@@ -66,7 +66,7 @@ A **Dockerfile** is included in the project to containerize the app. This makes 
 
 ## Environment Variables 🔑
 
-The project requires specific environment variables to run. An example file, `.env.example`, is provided as a template. You will need to add your own credentials and API keys to make the application fully functional.
+The project requires specific environment variables to run. An example file, `.env.example`, is provided as a template. You will need to add your own credentials and API keys to make the application fully functional. Attention to the `.env` naming in NextJS.
 
 ## Configurations ⚙️
 
